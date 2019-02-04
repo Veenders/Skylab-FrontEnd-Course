@@ -1,0 +1,25 @@
+@import "vars.scss";
+@import "mixins.scss";
+
+.image-card{
+  height: 300px;
+  overflow: hidden;
+  margin: 0.5em auto;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  img{
+    height: 100%;
+  }
+}
+.birra-avg{
+  color: red;
+}
+.container-fluid{
+  margin-top: 5em;
+}
+
+button.text-dark{
+  background-color: white;
+  border: 0px solid white;
+}

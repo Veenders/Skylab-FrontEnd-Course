@@ -1,0 +1,114 @@
+@import './variables.scss';
+
+body{
+    color: $complementaryColor;
+}
+.App-header{
+    width: 100%;
+    background: $complementaryColor;
+    color: $primaryColor;
+    text-align: center;
+    margin: 0;
+    padding: 2em;
+}
+main{
+    width: 70%;
+    margin: 2em auto;
+    background: $primaryColor;
+    padding: 2em;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 3px 10px $complementDarkColor;
+}
+button{
+    border-radius: 10px;
+    padding: 0.9em 1.5em;
+    background-color: $contrastColor;
+    color: $complementaryColor;
+    font-size: 1em;
+    box-shadow: 1px 3px 5px $complementDarkColor;
+}
+.addElement{
+    display:flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    text-align: center;
+    div{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content:stretch;
+        align-items: space-between;
+        input{
+            flex-grow: 1;
+            padding: 0.9em;
+            border-radius: 10px;
+            margin-right: 0.5em;
+            font-size: 1em;
+            box-shadow: 1px 3px 5px $complementDarkColor;
+        }
+    }
+    .error{
+        background: $contrastColor;
+        padding: 0.5em;
+        margin: 0;
+        margin-top: 0.2em;
+        border-radius: 5px;
+        box-shadow: 1px 3px 5px $complementDarkColor;
+    }
+}
+nav{
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        flex-grow: 1;
+        align-items: stretch;
+        border-radius: 5px;
+        border: 1px solid $contrastColor;
+        background-color: $complementDarkColor;
+        li{
+            flex-grow: 1;
+            text-align: center;
+            list-style-type: none;
+            padding: 1em;
+            margin: 0;
+            color: $contrastColor;
+            cursor: pointer;
+        }
+        .active{
+            color: $complementLightColor;
+            font-weight: bold;
+        }
+    }
+}
+.todolist{
+    background-color: $contrastColor;
+    padding: 1em;
+    text-align: center;
+    border-radius: 5px;
+    .TodoItem{
+        background-color: $complementLightColor;
+        padding: 1em;
+        box-shadow: 1px 3px 10px $complementDarkColor;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        align-items: center;
+        margin-bottom: 0.5em;
+        span{
+            text-align: left;
+            flex-grow: 1;
+            margin-left: 0.5em;
+        }
+        button{
+            padding: 0.7em;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+    }
+}
+

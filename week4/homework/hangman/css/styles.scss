@@ -1,0 +1,169 @@
+@import "vars.scss";
+@import "mixins.scss";
+
+body{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+
+}
+header{
+  color: $contrastColor;
+  background: $primaryColor;
+  margin: 0;
+  padding: 2em;
+  text-align: center;
+}
+
+#startdata{
+  width: 40%;
+  margin: 2em auto;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px $shadowColor;
+  text-align: center;
+  h2{
+    margin: 0;
+    padding: 1em;
+    background-color: $primaryColor;
+    color: $contrastColor;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 2em;
+  }
+  @media screen and (max-width:500px){
+    width: 90%;
+  }
+  @media screen and (max-width: 800px){
+    width: 60%;
+  }
+}
+input,
+button{
+  padding: 0.5em;
+  font-size: 1.1em;
+  border-radius: 5px;
+}
+
+#errorGuess,
+#errorName{
+  padding: 1em 0;
+  color: red;
+}
+main{
+  display: none;
+  flex-direction: row;
+  margin: 2em 0;
+  width: 100%;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: space-around;
+  section{
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px $shadowColor;
+    text-align: center;
+    padding: 2em;
+    margin-bottom: 1em;
+    #img{
+      margin: 0 auto;
+    }
+  }
+  .guess{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    #word-to-guess{
+      font-size: 2em;
+      text-align: center;
+      margin-bottom: 2em;
+    }
+  }
+  @media screen and (max-width:700px){
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    .guess{
+      order: -1;
+    }
+  }
+}
+.lifes6{
+  background-image: url("../img/man.png");
+}
+.lifes5{
+  background: url("../img/man.png") -75px 0;
+}
+
+.lifes4{
+  background: url("../img/man.png") -150px 0;
+}
+
+.lifes3{
+  background: url("../img/man.png") -225px 0;
+}
+
+.lifes2{
+  background: url("../img/man.png") -300px 0;
+}
+
+.lifes1{
+  background: url("../img/man.png") -375px 0;
+}
+
+.lifes0{
+  background: url("../img/man.png") -450px 0;
+}
+
+#modalBackground{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.541);
+  z-index: 2;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#finishGame{
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: $contrastColor;
+  margin: 2em auto;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px $shadowColor;
+  text-align: center;
+  width: 80%;
+  #imgFinish{
+    margin: 1em 0;
+  }
+}
+
+#modalSolucionar{
+  display: none;
+  flex-direction: column;
+  background-color: $contrastColor;
+  margin: 2em auto;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px $shadowColor;
+  text-align: center;
+  width: 80%;
+  h2{
+    margin: 0;
+    padding: 1em;
+    background-color: $primaryColor;
+    color: $contrastColor;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 2em;
+  }
+  small{
+    display: inline-block;
+    margin: 1em;
+  }
+}

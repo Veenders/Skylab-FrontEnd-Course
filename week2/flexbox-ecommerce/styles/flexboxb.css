@@ -1,0 +1,15 @@
+.products{
+  background-color: white;
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  flex-shrink: 1;
+}
+.product-offer{
+  background-color: lightgreen;
+}
+.product-standard{
+  background-color: lightgray;
+}
+.product-premium{
+  background-color: gold;
+}

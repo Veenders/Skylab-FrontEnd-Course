@@ -1,0 +1,12 @@
+.products{
+  background-color: white;
+}
+.product-offer{
+  background-color: lightgreen;
+}
+.product-standard{
+  background-color: lightgray;
+}
+.product-premium{
+  background-color: gold;
+}

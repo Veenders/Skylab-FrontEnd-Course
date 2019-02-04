@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman v0.2</title>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+  </script>
+</head>
+<body>
+    <header>
+        <h1>Ahorcado by Veenders</h1>
+        <div class="mark">
+            <h3>Palabras Acertadas: <span id="correctWords"></span></h3>
+            <h3>Palabras Incorrectas: <span id="wrongWords"></span></h3>
+            <h5><a id="resetMark" href="#">Resetear Marcador</a></h5>
+        </div>
+    </header>
+    <section id="startdata">
+        <h2>Introduce tu nombre</h2>
+        <input type="text" name="name" id="name" placeholder="Tu nombre">
+        <button id="start">Empezar</button>
+        <div id="errorName"></div>
+    </section>
+    <main id="maingame">
+        <section id="info">
+            <h2>Bienvenido <span id="expName"></span></h2>
+            <h3>Número de Vidas: <span id=expLifes></span></h3>
+            <div id="img" class="lifes6" style="width:75px; height:200px;"></div> 
+        </section>
+        <section class="guess">
+            <div id="word-to-guess"></div>
+            <div id="keyboard"></div>
+            <div class="form">
+                <form id="guess-form" method="" action="#">
+                    <input id="input-guess" type="text" maxlength="1" id="letter-input"/>
+                    <button id="submit-button" type="submit">Probar</button>
+                    <button id="modal">Solucionar</button>
+                </form>
+            </div>
+            <div id="errorGuess"></div>
+            <div id="usedLetters"></div>
+        </section>
+    </main>
+    <section id="modalBackground">
+        <section id="modalSolucionar">
+            <form id="solution-form" action="#">
+                <h2>Solucionar Ahorcado</h2>
+                <input id="input-solution" type="text" />
+                <button id="submit-solution" type="submit">Solucionar</button>
+                <button id="cancel" type="reset">Cancelar</button>
+            </form>
+            <small>Recuerde que si la respuesta es erronea perderà todas sus vidas</small>
+        </section>
+        <section id="finishGame">
+            <div id="imgFinish" style="width:75px; height:200px;"></div>
+            <div id="textFinish">
+                <h2 id="mainFinish"></h2>
+                <p id="messageFinish"></p>
+                <button id="restartButton">Jugar otra Partida</button>
+            </div>
+        </section>
+    </section>
+</body>
+</html>

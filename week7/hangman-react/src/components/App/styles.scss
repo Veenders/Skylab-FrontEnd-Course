@@ -1,0 +1,158 @@
+@import './variables.scss';
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  min-height: 100vh;
+}
+
+body{
+  color: $primaryColor;
+}
+
+.App-header {
+  min-height: 10vh;
+  background-color: $complementDarkColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: $complementLightColor;
+  flex-grow: 0;
+}
+
+main{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  button{
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    font-size: 1.1em;
+    background-color: $complementDarkColor;
+    color: $complementLightColor;
+    border: 1px solid $complementLightColor;
+    outline: none;
+  }
+  .used{
+    background-color:$contrastDarkColor;
+    color: $primaryColor;
+  }
+  input{
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    font-size: 1.1em;
+    color: $primaryColor;
+    margin-right: 1em;
+  }
+}
+
+.GameInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#img{
+  width:75px; 
+  height:200px;
+}
+
+.lifes6{
+  background-image: url("../../img/man.png");
+}
+
+.lifes5{
+  background: url("../../img/man.png") -75px 0;
+}
+
+.lifes4{
+  background: url("../../img/man.png") -150px 0;
+}
+
+.lifes3{
+  background: url("../../img/man.png") -225px 0;
+}
+
+.lifes2{
+  background: url("../../img/man.png") -300px 0;
+}
+
+.lifes1{
+  background: url("../../img/man.png") -375px 0;
+}
+
+.lifes0{
+  background: url("../../img/man.png") -450px 0;
+}
+
+.guessing{
+  font-size: 2.5em;
+}
+.MainGame{
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  .section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.keyboard{
+  margin: 1em auto;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    .blankelement{
+      grid-row: 3;
+      grid-column: 1 / span 2;
+    }
+    .success{
+      background-color: lightgreen;
+      border: 1px solid green;
+      color: green;
+    }
+    .error{
+      background-color: rgb(240, 182, 182);
+      border: 1px solid red;
+      color: red
+    }
+  }
+  @media screen and (max-width:700px){
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    .guess{
+      order: -1;
+    }
+  }
+
+footer{
+  min-height: 10vh;
+  background-color: $complementDarkColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow:0;
+  button{
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    font-size: 1.1em;
+    background-color: $complementLightColor;
+    color: $complementDarkColor;
+    border: 1px solid $complementLightColor;
+  }
+}
+
+

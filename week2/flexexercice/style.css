@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header ul{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+li{
+    padding: 1em;
+}
+
+.logo{
+    background-color: orange;
+}
+
+@media all and (min-width: 500px) {
+    header ul{
+        flex-direction: row;
+    }
+    .right{
+        margin-left: auto;
+    }
+}

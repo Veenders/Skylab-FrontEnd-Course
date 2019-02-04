@@ -1,0 +1,33 @@
+@mixin display-flex () {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin justify-content($just) {
+    -webkit-justify-content: $just;
+    -moz-justify-content   : $just;
+    -ms-justify-content    : $just;
+    justify-content        : $just;
+    -ms-flex-pack          : $just;
+}
+
+@mixin align-content($align) {
+    -webkit-align-content: $align;
+    -moz-align-content   : $align;
+    -ms-align-content    : $align;
+    align-content        : $align;
+}
+
+@mixin flex-complete ($direction, $justCompl, $align) {
+    @include display-flex();
+    @include justify-content($justCompl);
+    @include align-content($align);
+
+    -webkit-flex-direction: $direction;
+    -moz-flex-direction   : $direction;
+    -ms-flex-direction    : $direction;
+    flex-direction        : $direction;
+    
+}

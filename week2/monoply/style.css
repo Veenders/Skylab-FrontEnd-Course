@@ -1,0 +1,91 @@
+main{
+    display: grid;
+    grid-template-columns: repeat(5,10vw);
+    grid-template-rows: repeat(5,10vw);
+    grid-gap: 5vw;
+    align-items: stretch;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.5em;
+}
+header{
+    height: 1.25em;
+}
+
+.verde{
+    transform: rotate(180deg);
+}
+.verde header{
+    background-color: lightgreen;
+}
+
+.orange{
+    transform: rotate(270deg);
+}
+
+.orange header{
+    background-color: orange;
+}
+
+.rojo header{
+    background-color: red;
+}
+
+.azul{
+    transform: rotate(90deg);
+}
+
+.azul header{
+    background-color: blue;
+}
+
+div{
+    border: 1px solid black;
+}
+
+.firstsq span{
+    display: block;
+    transform: rotate(135deg);
+}
+.secondsq span{
+    display: block;
+    transform: rotate(215deg);
+}
+.thirdsq span{
+    display: block;
+    transform: rotate(45deg);
+}
+.forthsq span{
+    display: block;
+    transform: rotate(305deg);
+}
+.monopoly{
+    grid-area: 2 / 2 / 5 / 5;
+    border: none;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(315deg);
+    font-size: 2em;
+}
+
+footer{
+    margin-top: 100px;
+    width: 125px;
+    height: 20px;
+    background-color: #0791d0;
+    position: relative;
+    transform: rotate(-45deg);
+}
+footer:after{
+    content: "";
+    border-width: 20px 20px 0px 0px;
+    height: 100px;
+    width: 100px;
+    border-color: #0791d0;
+    border-style: solid;
+    position:absolute;
+    transform: rotate(45deg);
+    top: -50px;
+    right: 0;
+}

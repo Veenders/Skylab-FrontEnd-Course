@@ -1,0 +1,84 @@
+@import "vars.scss";
+@import "mixins.scss";
+
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  color: $primaryColor;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+  background-color: $primaryColor;
+  color: $contrastColor;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 2px 2px 10px $shadowColor;
+  nav{
+    a{
+      margin-left: 0.8em;
+      color: $contrastColor;
+      text-decoration: none;
+    }
+    select{
+      padding: 0.5em;
+      border-radius: 5px;
+    }
+  }
+}
+
+main{
+  margin: 1em auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 0;
+  
+  .userdiv{
+    border: 1px solid $primaryColor;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px $shadowColor;
+    margin: 1em;
+    padding: 0em;
+    min-width: 45%;
+    .element{
+      color: $secondaryColor;
+      text-transform: capitalize;
+    }
+    .userheader{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1em 0;
+      .profileimg{
+        border-radius: 50%;
+      }
+      .personaldata{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        .country{
+          width: 30%;
+        }
+      }
+    }
+    .userlocation,
+    .usercontact,
+    .userdata{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+  }
+}

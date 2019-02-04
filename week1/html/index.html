@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Carles Vila First HTML</h1>
+    <h2>This is my first html file</h2>
+    <div>
+        <p>
+            Lorem Ipsum <span>Lorem Ipsum</span> Lorem Ipsum Lorem Ipsum Lorem Ipsum <strong>Lorem Ipsum</strong> Lorem Ipsum Lorem Ipsum Lorem Ipsum
+        </p>
+        <p>
+            Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+        </p>
+        <ul>
+            <li>Item qualquiera</li>
+            <li>Item cualquiera también</li>
+            <li>Item cualquiera</li>
+        </ul>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+        </ol>
+    </div>
+    <div>
+        <dl>
+            <dt>Que comida es la que más te gusta</dt>
+            <dd>Cualquiera que este buena, tenga Colesterol i no sea verde!!! I que tenga Bacon!!!!</dd>
+        </dl>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Head 1</th>
+                <th>Head 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>celda 11</td>
+                <td>celda 12</td>
+            </tr>
+            <tr>
+                <td>Celda incompleta</td>
+            </tr>
+            <tr>
+                <td colspan="2">Celda Completa</td>
+            </tr>
+            <tr>
+                <td>celda 21</td>
+                <td>celda 22</td>
+            </tr>
+        </tbody>
+    </table>
+    <form action="crida.php" method="GET">
+        <div>
+            <label for="name">Nombre</label>
+            <input type="text" name="name" placheolder="Escriba su nombre">
+        </div>
+        <div>
+            <label for="Age">Edad:</label>
+            <input type="number" name="Age" id="age" placeholder="¿Cuantos años tienes?">
+        </div>
+        <div>
+            <label for="msg_type">Tipo de Mensaje</label>
+            <input type="radio" name="msg_type" value="Saludar"> Saludar
+            <input type="radio" name="msg_type" value="Por Trabajo"> Por Trabajo
+        </div>
+        <div>
+            <select name="selector" id="selector">
+                <option value="Opción1">Opción 1</option>
+            </select>
+        </div>
+        <div>
+            <label for="message"></label>
+            <textarea name="message"></textarea>
+        </div>
+        <div>
+            <input type="checkbox" name="GPDR" id="GPDR">
+            <label for="GPDR">Acepto las condiciones de privacidad</label>
+        </div>
+        <div>
+            <input type="button" value="Enviar">
+        </div>
+    </form>
+</body>
+
+</html>

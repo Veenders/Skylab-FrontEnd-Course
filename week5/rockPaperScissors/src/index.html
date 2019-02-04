@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rock, Paper, Scissors Game by Veenders</title>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+  </script>
+</head>
+<body>
+  <header>
+      <h1>Rock, Paper, Scissors Game by Veenders</h1>
+      <input type="checkbox" name="human" id="human" value="true" checked><laber for="human">Human</laber>
+  </header>
+  <main>
+    <section id="hand1" class="hand">
+      <h2>Hand 1</h2>
+      <button id="rock1" data-value="rock"><img src="./img/rock.jpg"></button>
+      <button id="paper1"data-value="paper"><img src="./img/paper.jpg"></button>
+      <button id="scissors1" data-value="scissors"><img src="./img/scissors.jpg"></button>
+    </section>
+    <section id="result">
+      <div id=resultMessage></div>
+    </section>
+    <section id="hand2" class="hand">
+      <h2>Hand 2</h2>
+      <button id="rock2" data-value="rock"><img src="./img/rock.jpg"></button>
+      <button id="paper2"data-value="paper"><img src="./img/paper.jpg"></button>
+      <button id="scissors2" data-value="scissors"><img src="./img/scissors.jpg"></button>
+    </section>
+  </main>
+  <footer>
+    <a href="#" id="modalOpen">Ver Ranking de Resultados</a>
+  </footer>
+  <div class="modalBackground">
+    <div class="modal">
+      <div class="modalHeader">
+        <h2>Resultados</h2>
+      </div>
+      <div id="tableResults">
+        <table>
+          <thead>
+            <tr> 
+              <th colspan="2">Results by Hand</th> 
+            </tr>
+            <tr>
+              <th>Element</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Hand 1</td>
+              <td id="hand1result"></td>
+            </tr>
+            <tr>
+              <td>Hand 2</td>
+              <td id="hand2result"></td>
+            </tr>
+            <tr>
+              <td>Tie</td>
+              <td id="tiehandresult"></td>
+            </tr>
+          </tbody>
+          <thead>
+              <tr> 
+                <th colspan="2">Results by Selection</th> 
+              </tr>
+              <tr>
+                <th>Element</th>
+                <th>Result</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Rock</td>
+                <td id="rockresult"></td>
+              </tr>
+              <tr>
+                <td>Paper</td>
+                <td id="paperresult"></td>
+              </tr>
+              <tr>
+                <td>Scissors</td>
+                <td id="scissorsresult"></td>
+              </tr>
+              <tr>
+                <td>Tie</td>
+                <td id="tieelementresult"></td>
+              </tr>
+            </tbody>
+        </table>
+      </div>
+      <div class="modalFooter">
+          <button id="resetResults">Reset Results</button>
+          <button id="modalClose">Close</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

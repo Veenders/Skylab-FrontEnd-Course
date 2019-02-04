@@ -1,0 +1,67 @@
+body{
+
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: stretch;
+    align-items: stretch;
+    margin: 0;
+    border: 1px solid darksalmon;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    background: pink;
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: stretch;
+    align-items: stretch;
+    border: 1px solid darksalmon;
+}
+span{
+    background: salmon;
+    flex-grow: 1;
+    margin: 1em 0;
+    text-align: center;
+    color: white;
+    border: 1px solid darksalmon;
+}
+.col-1{
+    max-width: 17%;
+}
+.col-2{
+    max-width: 34%;
+}
+.col-3{
+    max-width: 50%;
+}
+.col-4{
+    max-width: 67%;
+}
+.col-5{
+    max-width: 84%;
+}
+.col-6{
+    width: 100%;
+}
+@media screen and (max-width: 500px){
+    .row{
+        flex-wrap: wrap;
+        justify-content: stretch;
+        align-content: stretch;
+        align-items: stretch;
+    }
+    .col-1{
+        max-width: 50%;
+        min-width: 45%;
+    }
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5{
+        max-width: 100%;
+        min-width: 90%;
+    }
+}

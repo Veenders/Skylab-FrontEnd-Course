@@ -1,0 +1,18 @@
+.products{
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  width: 1400px;
+  margin: auto;
+}
+.product-offer{
+  background-color: lightgreen;
+}
+.product-standard{
+  background-color: lightgray;
+}
+.product-premium{
+  background-color: gold;
+}

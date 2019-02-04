@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source sans pro', 'Open sans', sans-serif;
+    font-weight: light;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+header {
+    margin: 0;
+    color: white;
+    background: darkolivegreen;
+    display: flex;
+    flex-direction: row;
+}
+
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+nav li {
+    list-style-type: none;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+.image{
+    order: 3;
+}
+
+.image img {
+    height: 13vh;
+    border-radius: 10px;
+    margin: 1vh;
+}
+.headname{
+    flex-grow: 1;
+    text-align: right;
+}
+
+header section h1,
+header section h2 {
+    font-weight: 300;
+    line-height: 0.9em;
+}
+
+header section h1 {
+    font-size: 2rem;
+}
+
+header section h2 {
+    font-size: 1.5rem;
+}
+@media all and (max-width: 500px) {
+    header {
+        flex-direction: column;
+    }
+    nav{
+        order: 3;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    .image{
+        order: 0;
+    }
+    header section h2{
+        line-height: 1em;
+    }
+}
+
+.maincontent{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+article {
+    border-bottom: 1px solid darkolivegreen;
+    margin: 2em 0;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.title{
+    width: 25%;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.title h2 {
+    padding: 0;
+    margin: 0;
+}
+
+
+aside {
+    background: darkolivegreen;
+    color: white;
+    padding: 1rem;
+    min-width: 15%;
+}
+
+aside h2 {
+    font-weight: 300;
+}
+
+aside li {
+    list-style-type: none;
+}
+
+aside a {
+    text-decoration: none;
+    color: white;
+}
+iframe{
+    max-width: 640px;
+    max-height: 360px;
+    width: 100%;
+}
+@media all and (max-width: 500px) {
+    .maincontent{
+        flex-direction: column;
+    }
+    article{
+        flex-direction: column;
+    }
+    .title{
+        width: 100%;
+    }
+}
+
+footer {
+    background: darkolivegreen;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}

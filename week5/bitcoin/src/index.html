@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bitcoin v0.2</title>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+  </script>
+</head>
+<body>
+    <header>
+        <h1>Bitcoin by Veenders</h1>
+    </header>
+    <main>
+        <section class="coin">
+
+        </section>
+        <section class="buttons">
+            <button id="newChain">Generate new Chain</button>
+            <button id="addBlockBtn">Add Block</button>
+            <button id="checkChain">Check Chain</button>
+            <button id="corruptChain">Corrupt Chain</button>
+        </section>
+    </main>
+    <div id="modalBackground">
+        <div id="modal">
+            <form id="addBlock" action="#">
+                <h2>Add a New Block</h2>
+                <textarea id="blockValue"></textarea>
+                <button id="submitBlock" type="submit">Add Block</button>
+                <button id="cancel" type="reset">Cancel</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
